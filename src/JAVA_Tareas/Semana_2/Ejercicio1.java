@@ -11,4 +11,20 @@
 package JAVA_Tareas.Semana_2;
 
 public class Ejercicio1 {
+    public static void main(String[] args) {
+/*  1) Si queremos convertir de grados Fahrenheit a grados Celsius debemos de
+    utilizar una fórmula de conversión. Si queremos convertir 90 grados
+    Fahrenheit a grados Celsius cuanto dará?
+    °C = (°F − 32) × 5 ⁄ 9
+*/
+        double fahrenheit= 90;
+
+        double celsius = ((fahrenheit-32) * 5/9);
+        System.out.println("-----------------------");
+        System.out.println("90° Grados Fahrenheit");
+        System.out.println("-----------------------");
+        System.out.println("La Conversion a Celsius es: " + celsius);
+        System.out.println("-----------------------");
+
+    }
 }
