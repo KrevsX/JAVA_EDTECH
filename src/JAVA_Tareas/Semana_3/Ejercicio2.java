@@ -12,6 +12,8 @@
 
 package JAVA_Tareas.Semana_3;
 
+import java.util.Scanner;
+
 public class Ejercicio2 {
 /*
     2) Una empresa de venta de computadoras paga a su personal de ventas un salario
@@ -24,5 +26,56 @@ public class Ejercicio2 {
 
     public static void main(String[] args) {
 
+        Scanner scan = new Scanner(System.in);
+
+        double sueldoMensual = 300;
+        double comxVent = 50;
+
+        System.out.println("Ingresar el Nombre del Empleado: ");
+        String nomEmp = scan.nextLine();
+        System.out.println("Ingresar en texto el Mes: ");
+        String mes = scan.nextLine().toUpperCase();
+        System.out.println("Ingresar la cantidad de computadoras vendidas en el\n" +
+                "Mes de : " + mes);
+        int compVend = scan.nextInt();
+        scan.close();
+
+        double a = comisionVentaC(compVend);
+        double b = sumaSueldoCom(sueldoMensual, a);
+        double c = retRenta(b);
+
+        double resultado = b - c;
+
+        System.out.println("-------------------------------------------------------------");
+        System.out.println("El Empleado: " + nomEmp);
+        System.out.println("----------------------------------------");
+        System.out.println("Vendio: " + compVend + " Computadoras en el mes de: " + mes);
+        System.out.println("-------------------------------------------------------------");
+        System.out.println("Sueldo Mensual:                  " + sueldoMensual + " $" + " +");
+        System.out.println("----------------------------------------");
+        System.out.println("Comision x Venta: " + compVend + " X " + comxVent + " $" + " =  " + a + " $" + " +");
+        System.out.println("----------------------------------------");
+        System.out.println("                                " + b + " $" + " =");
+        System.out.println("----------------------------------------");
+        System.out.println("Rentencion de Renta:             " + c + " $" + " -");
+        System.out.println("----------------------------------------");
+        System.out.println("Sueldo a Recibir:                " + resultado + " $" + " =");
+        System.out.println("----------------------------------------");
+
+
     }
+
+    private static double sumaSueldoCom(double sueldoMes, double comVent) {
+        return sueldoMes + comVent;
+    }
+
+    public static double comisionVentaC(int cantCompuVend) {
+        return cantCompuVend * 50.00;
+    }
+
+    public static double retRenta(double sumasSuCom) {
+        return sumasSuCom * 0.1;
+
+    }
+
 }
