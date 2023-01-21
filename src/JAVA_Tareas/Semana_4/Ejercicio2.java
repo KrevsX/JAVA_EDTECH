@@ -32,7 +32,8 @@ public class Ejercicio2 {
 
         String a = JOptionPane.showInputDialog("Ingresar Nombre Cliente: ");
         double b = Double.parseDouble(JOptionPane.showInputDialog("Ingresar la Cantidad que Desea Invertir: "));
-        double c = Double.parseDouble(JOptionPane.showInputDialog("Ingresar Interes Anual: "));
+        double c = Double.parseDouble(JOptionPane.showInputDialog("Ingresar Interes Anual: \n"
+                + "1-9% - 0.01-9" + "10-99% - 0.10-99" + "100% - 1.0"));
         int d = Integer.parseInt(JOptionPane.showInputDialog("Ingresar Plazo de Inversion (En Meses): "));
         Banco banco = new Banco(a, b, c, d);
 
