@@ -57,7 +57,7 @@ public class Ejercicio1 {
         JOptionPane.showMessageDialog(null, "No Factura : " + fact.getNoFactura() + "\n\n"
                 + "Nombre del Cliente : " + fact.getNombre() + "    ||    " + "Telefono : " + fact.getTelefono() + "\n\n"
                 + "Direccion : " + fact.getDireccion() + "\n"
-                + "__________________________" + "\n\n"
+                + "________________________________________" + "\n\n"
                 + "Monto de Factura : " + df.format(fact.getMontFactura()) + "\n\n"
                 + "IVA 13% : " + df.format(fact.impuestoIva()) + "\n\n"
                 + "Estatus del Cliente: \n"

@@ -71,11 +71,17 @@ public class Factura {
         String resultado;
         if (this.montFactura > 0) {
 
-            resultado = "________\n" + "ACTIVO ✔\n" + "________";
+            resultado = """
+                    ________
+                    ACTIVO ✔
+                    ________""";
 
         } else {
 
-            resultado = "__________\n" + "INACTIVO ❌\n" + "__________";
+            resultado = """
+                    __________
+                    INACTIVO ❌
+                    __________""";
 
         }
         return resultado;
