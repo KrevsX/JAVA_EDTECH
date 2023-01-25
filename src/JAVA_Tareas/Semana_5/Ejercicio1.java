@@ -15,6 +15,7 @@ package JAVA_Tareas.Semana_5;
 import JAVA_Tareas.Semana_5.Ejercicio.Factura;
 
 import javax.swing.*;
+import java.text.DecimalFormat;
 
 
 public class Ejercicio1 {
@@ -37,7 +38,9 @@ public class Ejercicio1 {
     */
     public static void main(String[] args) {
 
+        DecimalFormat df = new DecimalFormat("#.00");
         Factura fact = new Factura();
+
 
         long noFactura = Long.parseLong(JOptionPane.showInputDialog(null, "Ingresa el Numero de Factura: \n"));
         String nombre = JOptionPane.showInputDialog(null, "Ingrese su Nombre: \n");
@@ -51,10 +54,14 @@ public class Ejercicio1 {
         fact.setDireccion(direccion);
         fact.setMontFactura(montoFactura);
         ///
-        fact.impuestoIva();
-        fact.estatusCliente();///mostrarlo en dialog
-        ///
-
+        JOptionPane.showMessageDialog(null, "No Factura : " + fact.getNoFactura() + "\n\n"
+                + "Nombre del Cliente : " + fact.getNombre() + "    ||    " + "Telefono : " + fact.getTelefono() + "\n\n"
+                + "Direccion : " + fact.getDireccion() + "\n"
+                + "__________________________" + "\n\n"
+                + "Monto de Factura : " + df.format(fact.getMontFactura()) + "\n\n"
+                + "IVA 13% : " + df.format(fact.impuestoIva()) + "\n\n"
+                + "Estatus del Cliente: \n"
+                + fact.estatusCliente());
 
     }
 

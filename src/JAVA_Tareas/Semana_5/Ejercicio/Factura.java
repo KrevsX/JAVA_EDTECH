@@ -19,12 +19,11 @@ public class Factura {
     private long telefono;
     private String direccion;
     private double montFactura;
-    boolean estatus;
 
 
     public double impuestoIva() {
 
-        return (montFactura * 0.13);
+        return montFactura * 0.13;
     }
 
     public long getNoFactura() {
@@ -67,17 +66,24 @@ public class Factura {
         this.montFactura = montFactura;
     }
 
-    public void estatusCliente() {
+
+    public String estatusCliente() {
+        String resultado;
         if (this.montFactura > 0) {
 
-            this.estatus = true;
-
-            System.out.println("________\n" + "ACTIVO ✔\n" + "________");
+            resultado = """
+                    ________
+                    ACTIVO ✔
+                    ________""";
 
         } else {
 
-            System.out.println("__________\n" + "INACTIVO ❌\n" + "__________");
+            resultado = """
+                    __________
+                    INACTIVO ❌
+                    __________""";
 
         }
+        return resultado;
     }
 }
