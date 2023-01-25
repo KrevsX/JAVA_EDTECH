@@ -41,6 +41,11 @@ public class Ejercicio1 {
         DecimalFormat df = new DecimalFormat("#.00");
         Factura fact = new Factura();
 
+        //  NOTA   //
+        //  EL ESTATUS DEL CLIENTE ESTA BASADO
+        //  EN EL MONTO INGRESADO
+        // AL INGRESAR 0 SERA INACTIVO
+        // AL IMGRESAR UN NUMERO MAYOR A 0 SERA ACTIVO...
 
         long noFactura = Long.parseLong(JOptionPane.showInputDialog(null, "Ingresa el Numero de Factura: \n"));
         String nombre = JOptionPane.showInputDialog(null, "Ingrese su Nombre: \n");
@@ -55,8 +60,8 @@ public class Ejercicio1 {
         fact.setMontFactura(montoFactura);
         ///
         JOptionPane.showMessageDialog(null, "No Factura : " + fact.getNoFactura() + "\n\n"
-                + "Nombre del Cliente : " + fact.getNombre() + "    ||    " + "Telefono : " + fact.getTelefono() + "\n\n"
-                + "Direccion : " + fact.getDireccion() + "\n"
+                + "Nombre del Cliente : " + fact.getNombre().toUpperCase() + "    ||    " + "Telefono : " + fact.getTelefono() + "\n\n"
+                + "Direccion : " + fact.getDireccion().toUpperCase() + "\n"
                 + "________________________________________" + "\n\n"
                 + "Monto de Factura : " + df.format(fact.getMontFactura()) + "\n\n"
                 + "IVA 13% : " + df.format(fact.impuestoIva()) + "\n\n"
