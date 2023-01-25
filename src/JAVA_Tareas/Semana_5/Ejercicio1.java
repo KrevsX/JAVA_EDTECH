@@ -59,14 +59,16 @@ public class Ejercicio1 {
         fact.setDireccion(direccion);
         fact.setMontFactura(montoFactura);
         ///
-        JOptionPane.showMessageDialog(null, "No Factura : " + fact.getNoFactura() + "\n\n"
-                + "Nombre del Cliente : " + fact.getNombre().toUpperCase() + "    ||    " + "Telefono : " + fact.getTelefono() + "\n\n"
-                + "Direccion : " + fact.getDireccion().toUpperCase() + "\n"
-                + "________________________________________" + "\n\n"
-                + "Monto de Factura : " + df.format(fact.getMontFactura()) + "\n\n"
-                + "IVA 13% : " + df.format(fact.impuestoIva()) + "\n\n"
+        JOptionPane.showMessageDialog(null, fact.InfoPersonal() + "\n\n"
+                + "_____________________________________\n"
+                + fact.TdsAtributos() + "\n"
+                + "_____________________________________\n"
+                + "IVA 13% :"
+                + df.format(fact.impuestoIva()) + "\n"
+                + "_____________________________________\n"
                 + "Estatus del Cliente: \n"
                 + fact.estatusCliente());
+
 
     }
 

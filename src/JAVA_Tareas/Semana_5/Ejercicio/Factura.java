@@ -20,15 +20,11 @@ public class Factura {
     private String direccion;
     private double montFactura;
 
-
     public double impuestoIva() {
 
         return montFactura * 0.13;
     }
 
-    public long getNoFactura() {
-        return noFactura;
-    }
 
     public void setNoFactura(long noFactura) {
         this.noFactura = noFactura;
@@ -42,48 +38,50 @@ public class Factura {
         this.nombre = nombre;
     }
 
-    public long getTelefono() {
-        return telefono;
-    }
-
     public void setTelefono(long telefono) {
         this.telefono = telefono;
-    }
-
-    public String getDireccion() {
-        return direccion;
     }
 
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
 
-    public double getMontFactura() {
-        return montFactura;
-    }
 
     public void setMontFactura(double montFactura) {
         this.montFactura = montFactura;
     }
 
 
+    public String InfoPersonal() {
+
+        return "Nombre del Cliente: " + this.nombre + "  ||  " + "Telefono: " + this.telefono + "\n\n"
+                + "Direccion: " + this.direccion;
+    }
+
+    public String TdsAtributos() {
+        return "Factura Numero: " + this.noFactura + "\n\n"
+                + "Monto de Factura: " + this.montFactura;
+    }
+
     public String estatusCliente() {
-        String resultado;
+
+        String estatusCleinte;
         if (this.montFactura > 0) {
 
-            resultado = """
+
+            estatusCleinte = """
                     ________
                     ACTIVO ✔
                     ________""";
 
         } else {
 
-            resultado = """
+            estatusCleinte = """
                     __________
                     INACTIVO ❌
                     __________""";
 
         }
-        return resultado;
+        return estatusCleinte;
     }
 }
