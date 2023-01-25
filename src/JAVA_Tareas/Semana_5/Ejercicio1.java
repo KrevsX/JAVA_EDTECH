@@ -44,8 +44,8 @@ public class Ejercicio1 {
         //  NOTA   //
         //  EL ESTATUS DEL CLIENTE ESTA BASADO
         //  EN EL MONTO INGRESADO
-        // AL INGRESAR 0 SERA INACTIVO
-        // AL IMGRESAR UN NUMERO MAYOR A 0 SERA ACTIVO...
+        //  AL INGRESAR 0 SERA INACTIVO
+        //  AL IMGRESAR UN NUMERO MAYOR A 0 SERA ACTIVO...
 
         long noFactura = Long.parseLong(JOptionPane.showInputDialog(null, "Ingresa el Numero de Factura: \n"));
         String nombre = JOptionPane.showInputDialog(null, "Ingrese su Nombre: \n");
