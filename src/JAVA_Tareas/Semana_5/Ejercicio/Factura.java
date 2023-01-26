@@ -13,8 +13,10 @@
 package JAVA_Tareas.Semana_5.Ejercicio;
 
 import javax.swing.*;
+import java.text.DecimalFormat;
 
 public class Factura {
+    DecimalFormat df = new DecimalFormat("#.00");
     private int noFactura;
     private String nombreCliente;
     private String telefonoCliente;
@@ -23,11 +25,11 @@ public class Factura {
 
 
     public Factura() {
-        this.noFactura = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el número de factura: "));
-        this.nombreCliente = JOptionPane.showInputDialog("Ingrese el nombre del cliente: ");
-        this.telefonoCliente = JOptionPane.showInputDialog("Ingrese el teléfono del cliente: ");
-        this.direccionCliente = JOptionPane.showInputDialog("Ingrese la dirección del cliente: ");
-        this.montFactura = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el monto total de la factura: "));
+        this.noFactura = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el número de factura: ".toUpperCase()));
+        this.nombreCliente = JOptionPane.showInputDialog("Ingresar nombre del cliente: ".toUpperCase());
+        this.telefonoCliente = JOptionPane.showInputDialog("Ingresar teléfono del cliente: ".toUpperCase());
+        this.direccionCliente = JOptionPane.showInputDialog("Ingresar dirección del cliente: ".toUpperCase());
+        this.montFactura = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el monto total de la factura: ".toUpperCase()));
 
     }
 
@@ -60,19 +62,20 @@ public class Factura {
 
     public String InfoPersonal() {
 
-        return "Nombre del Cliente: " + this.nombreCliente
-                + "|| Teléfono: " + this.telefonoCliente + "\n"
-                + " Dirección: " + this.direccionCliente;
+        return "Nombre del Cliente: " + this.nombreCliente.toUpperCase()
+                + "  ||   Teléfono: " + this.telefonoCliente + "\n"
+                + "Dirección: " + this.direccionCliente.toUpperCase();
     }
 
     public String Atributos() {
 
         return "No. Factura: " + this.noFactura + "\n\n"
                 + InfoPersonal() + "\n"
-                + "_______________________________________________________________" + "\n"
-                + " Monto Total Factura: " + this.montFactura + "\n"
-                + " Cliente Activo: \n" + estatusCliente()
-                + " Impuesto IVA: " + calcularImpuestoIva();
+                + "_______________________________________________________________" + "\n\n"
+                + "Monto Total Factura: " + df.format(this.montFactura) + "\n"
+                + "Impuesto IVA 13% : " + df.format(calcularImpuestoIva()) + "\n"
+                + "Cliente Activo: \n" + estatusCliente();
+
     }
 
 }
