@@ -12,55 +12,23 @@
 
 package JAVA_Tareas.Semana_5.Ejercicio;
 
-public class Factura {
+import javax.swing.*;
 
-    private long noFactura;
-    private String nombre;
-    private long telefono;
-    private String direccion;
+public class Factura {
+    private int noFactura;
+    private String nombreCliente;
+    private String telefonoCliente;
+    private String direccionCliente;
     private double montFactura;
 
-    public double impuestoIva() {
 
-        return montFactura * 0.13;
-    }
+    public Factura() {
+        this.noFactura = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el número de factura: "));
+        this.nombreCliente = JOptionPane.showInputDialog("Ingrese el nombre del cliente: ");
+        this.telefonoCliente = JOptionPane.showInputDialog("Ingrese el teléfono del cliente: ");
+        this.direccionCliente = JOptionPane.showInputDialog("Ingrese la dirección del cliente: ");
+        this.montFactura = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el monto total de la factura: "));
 
-
-    public void setNoFactura(long noFactura) {
-        this.noFactura = noFactura;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public void setTelefono(long telefono) {
-        this.telefono = telefono;
-    }
-
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
-    }
-
-
-    public void setMontFactura(double montFactura) {
-        this.montFactura = montFactura;
-    }
-
-
-    public String InfoPersonal() {
-
-        return "Nombre del Cliente: " + this.nombre + "  ||  " + "Telefono: " + this.telefono + "\n\n"
-                + "Direccion: " + this.direccion;
-    }
-
-    public String TdsAtributos() {
-        return "Factura Numero: " + this.noFactura + "\n\n"
-                + "Monto de Factura: " + this.montFactura;
     }
 
     public String estatusCliente() {
@@ -84,4 +52,27 @@ public class Factura {
         }
         return estatusCleinte;
     }
+
+    public double calcularImpuestoIva() {
+        return this.montFactura * 0.13;
+    }
+
+
+    public String InfoPersonal() {
+
+        return "Nombre del Cliente: " + this.nombreCliente
+                + "|| Teléfono: " + this.telefonoCliente + "\n"
+                + " Dirección: " + this.direccionCliente;
+    }
+
+    public String Atributos() {
+
+        return "No. Factura: " + this.noFactura + "\n\n"
+                + InfoPersonal() + "\n"
+                + "_______________________________________________________________" + "\n"
+                + " Monto Total Factura: " + this.montFactura + "\n"
+                + " Cliente Activo: \n" + estatusCliente()
+                + " Impuesto IVA: " + calcularImpuestoIva();
+    }
+
 }

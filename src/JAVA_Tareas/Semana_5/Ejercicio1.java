@@ -12,7 +12,7 @@
 
 package JAVA_Tareas.Semana_5;
 
-import JAVA_Tareas.Semana_5.Ejercicio.Factura;
+import JAVA_Tareas.Semana_5.Ejercicio.Factura_1Prueba;
 
 import javax.swing.*;
 import java.text.DecimalFormat;
@@ -39,7 +39,7 @@ public class Ejercicio1 {
     public static void main(String[] args) {
 
         DecimalFormat df = new DecimalFormat("#.00");
-        Factura fact = new Factura();
+        Factura_1Prueba fact = new Factura_1Prueba();
 
         //  NOTA   //
         //  EL ESTATUS DEL CLIENTE ESTA BASADO
