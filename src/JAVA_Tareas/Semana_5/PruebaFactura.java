@@ -16,6 +16,24 @@ package JAVA_Tareas.Semana_5;
 import javax.swing.*;
 
 public class PruebaFactura {
+/*  Crear la clase Factura utilizando ENCAPSULAMIENTO con las siguientes características:
+
+            Atributos:
+            No Factura
+            Nombre del Cliente
+            Teléfono del Cliente
+            Dirección del Cliente
+            Monto Total Factura
+            Bandera de Cliente Activo o Inactivo
+            Impuesto del Iva
+
+            Métodos:
+            Crear un método para calcular el Impuesto del Iva (Monto Total Factura * 13%)
+            Imprimir el Nombre, Teléfono y Dirección concatenados
+            Imprimir Todos los Atributos
+            Crear el método main para probar el funcionamiento de la clase y realizar sus pruebas.
+*/
+
     public static void main(String[] args) {
         Factura fc = new Factura();
 

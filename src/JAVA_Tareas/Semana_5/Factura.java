@@ -59,7 +59,6 @@ public class Factura {
         return this.montFactura * 0.13;
     }
 
-
     public String InfoPersonal() {
 
         return "Nombre del Cliente: " + this.nombreCliente.toUpperCase()
