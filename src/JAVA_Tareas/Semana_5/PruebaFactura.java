@@ -10,10 +10,10 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package JAVA_Tareas.Semana_5.Ejercicio;
+package JAVA_Tareas.Semana_5;
+
 
 import javax.swing.*;
-import java.text.DecimalFormat;
 
 public class PruebaFactura {
     public static void main(String[] args) {
