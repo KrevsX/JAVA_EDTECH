@@ -73,7 +73,7 @@ public class Factura {
                 + InfoPersonal() + "\n"
                 + "_______________________________________________________________" + "\n\n"
                 + "Monto Total Factura: " + df.format(this.montFactura) + "\n"
-                + "Impuesto IVA 13% : " + df.format(calcularImpuestoIva()) + "\n"
+                + "Impuesto IVA 13% : " + df.format(calcularImpuestoIva()) + "\n\n"
                 + "Cliente Activo: \n" + estatusCliente();
 
     }
