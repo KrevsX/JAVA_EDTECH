@@ -17,7 +17,7 @@ import java.text.DecimalFormat;
 
 public class Factura {
     DecimalFormat df = new DecimalFormat("#.00");
-    private int noFactura;
+    private long noFactura;
     private String nombreCliente;
     private String telefonoCliente;
     private String direccionCliente;
@@ -25,7 +25,7 @@ public class Factura {
 
 
     public Factura() {
-        this.noFactura = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el número de factura: ".toUpperCase()));
+        this.noFactura = Long.parseLong(JOptionPane.showInputDialog("Ingrese el número de factura: ".toUpperCase()));
         this.nombreCliente = JOptionPane.showInputDialog("Ingresar nombre del cliente: ".toUpperCase());
         this.telefonoCliente = JOptionPane.showInputDialog("Ingresar teléfono del cliente: ".toUpperCase());
         this.direccionCliente = JOptionPane.showInputDialog("Ingresar dirección del cliente: ".toUpperCase());
