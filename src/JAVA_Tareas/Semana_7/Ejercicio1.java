@@ -15,6 +15,23 @@ package JAVA_Tareas.Semana_7;
 import javax.swing.*;
 
 public class Ejercicio1 {
+/*
+1) En la Universidad Francisco Gavidia se realizan 4 laboratorios y 4 parciales
+    en cada asignatura. Los 4 laboratorios forman el 40% de la nota final y los 4
+    parciales forman el 60% de la nota final. Escribir un programa en Java que
+    solicite ingresar las notas de 10 estudiantes y nos muestre cuántos tienen
+    notas mayores o iguales a 6.0 y cuántos menores a 6.0, es decir están
+    reprobados.
+
+            Ejemplo: Estudiante Brad Pitt
+            Lab1=8, Lab2=9, Lab3=7 y Lab4=7.5 Calculo: (8+9+7+7.5)/4*0.4 (Promedio 1)
+            Par1=9, Par2=8, Par3=7 y Par4=8.5 Calculo: (9+8+7+8.5)/4*0.6 (Promedio 2)
+            Nota final: Promedio1 + Promedio2
+
+    El programa deberá de hacer los cálculos para 10 estudiantes utilizando
+    repeticiones.
+*/
+
     public static void main(String[] args) {
 
         int aprobados = 0;
