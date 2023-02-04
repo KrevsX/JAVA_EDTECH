@@ -37,19 +37,23 @@ public class Ejercicio1 {
 
         switch (opcion) {
             case "S":
-                JOptionPane.showMessageDialog(null, "El Resultado es: \n" + Sumar(valor1, valor2));
+                JOptionPane.showMessageDialog(null, "El Resultado es: \n"
+                        + Sumar(valor1, valor2));
                 break;
 
             case "R":
-                JOptionPane.showMessageDialog(null, "El Resultado es: \n" + Restar(valor1, valor2));
+                JOptionPane.showMessageDialog(null, "El Resultado es: \n"
+                        + Restar(valor1, valor2));
                 break;
 
             case "M":
-                JOptionPane.showMessageDialog(null, "El Resultado es: \n" + Multiplicar(valor1, valor2));
+                JOptionPane.showMessageDialog(null, "El Resultado es: \n"
+                        + Multiplicar(valor1, valor2));
                 break;
 
             case "D":
-                JOptionPane.showMessageDialog(null, "El Resultado es: \n" + Dividir(valor1, valor2));
+                JOptionPane.showMessageDialog(null, "El Resultado es: \n"
+                        + Dividir(valor1, valor2));
                 break;
 
         }
