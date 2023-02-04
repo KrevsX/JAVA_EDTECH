@@ -15,8 +15,8 @@ package JAVA_Tareas.Semana_7;
 import javax.swing.*;
 
 public class Ejercicio1 {
-/*
-1) En la Universidad Francisco Gavidia se realizan 4 laboratorios y 4 parciales
+    /*
+    1) En la Universidad Francisco Gavidia se realizan 4 laboratorios y 4 parciales
     en cada asignatura. Los 4 laboratorios forman el 40% de la nota final y los 4
     parciales forman el 60% de la nota final. Escribir un programa en Java que
     solicite ingresar las notas de 10 estudiantes y nos muestre cuántos tienen
@@ -30,7 +30,7 @@ public class Ejercicio1 {
 
     El programa deberá de hacer los cálculos para 10 estudiantes utilizando
     repeticiones.
-*/
+    */
 
     public static void main(String[] args) {
 
