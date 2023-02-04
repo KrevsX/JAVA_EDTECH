@@ -34,7 +34,6 @@ public class Ejercicio2 {
             } else {
                 salario = hrsTrabajadas * 15;
 
-
             }
             JOptionPane.showMessageDialog(null, "El Empleado " + i + "# " + "Genero: " + salario + " $\n"
                     + "En base a " + hrsTrabajadas + " Horas Extras Realizadas");
