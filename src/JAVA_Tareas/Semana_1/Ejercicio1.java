@@ -20,12 +20,12 @@ public class Ejercicio1 {
         double precioConiva;
 
 
-        precioConiva = preciohorno+(preciohorno * descuento);
+        precioConiva = preciohorno + (preciohorno * descuento);
 
         System.out.println("-----------------------");
         System.out.println("Precio Sin Iva: " + preciohorno);
         System.out.println("-----------------------");
-        System.out.println("13% IVA: " + preciohorno*descuento);
+        System.out.println("13% IVA: " + preciohorno * descuento);
         System.out.println("-----------------------");
         System.out.println("precio Con Iva: " + precioConiva);
         System.out.println("-----------------------");

@@ -17,22 +17,23 @@ public class JE6_Creacion_Objetos_Constructores {
     String nombres;
     String apellidos;
 
-    public void registrarEmpleado(){
+    public void registrarEmpleado() {
         System.out.println("Metedo para Registrar empleados");
 
     }
-    public void consultarEmpleado(){
+
+    public void consultarEmpleado() {
         System.out.println("metodo para consultar empleado");
     }
 
-    public void eliminarEmpleado(){
+    public void eliminarEmpleado() {
         System.out.println("Metodo para Eliminar Empleado");
     }
 
     public static void main(String[] args) {
         JE6_Creacion_Objetos_Constructores emp = new JE6_Creacion_Objetos_Constructores();
         emp.noCarnet = 29833;
-        emp.apellidos= "Alas";
+        emp.apellidos = "Alas";
         emp.nombres = "kev";
 
         emp.registrarEmpleado();

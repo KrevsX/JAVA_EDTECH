@@ -14,27 +14,28 @@ package JAVA_Practica;
 
 public class JE7_CuentaBancaria {
 
-    long  numeroCuenta;
+    //long numeroCuenta;
     JE9_Cliente propietarioCuenta;
     double saldoCuenta;
 
 
-    public void abonar(double cantidad){
+    public void abonar(double cantidad) {
         saldoCuenta += cantidad;
     }
-    public void retirar(double cantidad){
-        if (cantidad>saldoCuenta){
+
+    public void retirar(double cantidad) {
+        if (cantidad > saldoCuenta) {
             System.out.println("Saldo Insuficiente");
-        }else{
-            saldoCuenta-= cantidad;
+        } else {
+            saldoCuenta -= cantidad;
         }
     }
 
-    public String dataosPropietarioCuenta(){
-        String informacion ="";
-        informacion += "Dui: " + propietarioCuenta.noDui+"\n";
-        informacion += "Nombre: " + propietarioCuenta.nombre+"\n";
-        informacion += "Telefono: " + propietarioCuenta.telefono+"\n";
+    public String dataosPropietarioCuenta() {
+        String informacion = "";
+        informacion += "Dui: " + propietarioCuenta.noDui + "\n";
+        informacion += "Nombre: " + propietarioCuenta.nombre + "\n";
+        informacion += "Telefono: " + propietarioCuenta.telefono + "\n";
         return informacion;
     }
 }

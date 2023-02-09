@@ -16,7 +16,7 @@ import javax.swing.*;
 import java.text.DecimalFormat;
 
 public class Ejercicio2 {
-    
+
     /*
     2) La empresa Compu Smart se dedica a la venta de equipos de computación.
     Vende tanto computadoras como dispositivos periféricos y consumibles. La

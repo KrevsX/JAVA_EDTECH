@@ -19,9 +19,9 @@ public class JE8_PruebaCuentaBancaria {
         JE9_Cliente propietario = new JE9_Cliente();
         JE7_CuentaBancaria cuenta = new JE7_CuentaBancaria();
 
-        propietario.noDui="003388593";
-        propietario.nombre="Roztenkowski";
-        propietario.telefono=503476543;
+        propietario.noDui = "003388593";
+        propietario.nombre = "Roztenkowski";
+        propietario.telefono = 503476543;
 
         cuenta.propietarioCuenta = propietario;
 
@@ -36,7 +36,6 @@ public class JE8_PruebaCuentaBancaria {
 
         JOptionPane.showMessageDialog(null, "Datos del propietario de la cuenta \n" +
                 cuenta.dataosPropietarioCuenta());
-
 
 
     }

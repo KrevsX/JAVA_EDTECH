@@ -15,13 +15,18 @@ package JAVA_Practica;
 public class JE18_Arrays {
     public static void main(String[] args) {
         String[] androidVersions = new String[17];
-        String days[] = new String[7];
+        String[] days = new String[7];
 
         String[][] cities = new String[4][2];
+
+
+/*
+        //EJMPLO DE ARRAYS DE  3 Y 4 DIMENCIONES..
 
         int[][][] numbers = new int[2][2][2];
 
         int[][][][] numbers4 = new int[2][2][2][2];
+*/
 
         androidVersions[0] = "Apple Pie";
         androidVersions[1] = "Banana Bread";
@@ -29,8 +34,8 @@ public class JE18_Arrays {
         androidVersions[3] = "Donut";
 
         //para visualizar el tamano del array 
-        for (int i = 0; i < days.length; i++) {
-            System.out.println(days[i]);
+        for (String day : days) {
+            System.out.println(day);
         }
 
         //mostrar los datos del array
@@ -79,9 +84,9 @@ public class JE18_Arrays {
         //para evaluar el tamano de un array de 2 dimenciones...
         // i para las lineas
         // j para las columnas
-        for (int i = 0; i < cities.length; i++) {
-            for (int j = 0; j < cities[i].length; j++) {
-                System.out.println("....." + cities[i][j]);
+        for (String[] city : cities) {
+            for (String s : city) {
+                System.out.println("....." + s);
             }
         }
         

@@ -26,7 +26,7 @@ public class Casa {
         this.numCasa = numCasa;
     }
 
-    public void infoCasa(){
+    public void infoCasa() {
         System.out.println("Nombre de la Calle: " + nomCalle);
         System.out.println("Numero de Pasaje:  " + numPasaje);
         System.out.println("Numero de Casa: " + numCasa);

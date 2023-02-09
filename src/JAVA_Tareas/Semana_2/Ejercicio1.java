@@ -19,9 +19,9 @@ public class Ejercicio1 {
     Fahrenheit a grados Celsius cuanto dará?
     °C = (°F − 32) × 5 ⁄ 9
 */
-        double fahrenheit= 90;
+        double fahrenheit = 90;
 
-        double celsius = ((fahrenheit-32) * 5/9);
+        double celsius = ((fahrenheit - 32) * 5 / 9);
         System.out.println("-----------------------");
         System.out.println("90° Grados Fahrenheit");
         System.out.println("-----------------------");
