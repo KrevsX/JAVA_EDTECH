@@ -10,7 +10,7 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package JAVA_EjerciciosPracticos.EP_Semana1;
+package JAVA_EjerciciosPracticos.ExsPracticos;
 
 import javax.swing.*;
 

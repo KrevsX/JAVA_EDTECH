@@ -10,18 +10,19 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package JAVA_EjerciciosPracticos.EP_Semana1;
+package JAVA_EjerciciosPracticos.ExsPracticos;
 
-public class Ejercicio2 {
+public class Ejercicio3 {
     public static void main(String[] args) {
 
-        int carroVendido = 15;
-        double precVehiculo = 12000;
-        double comXventa = 0.02;
-        double gananciaMensual = 15 * precVehiculo * comXventa;
+        double preciohorno = 69;
+        double descuento = 0.13;
+        double preciosinIva;
 
-        System.out.println("El Empleado a Vendido: " + carroVendido + " Vehiculos");
-        System.out.println("comision por Venta 2%");
-        System.out.println("Ganacia Comision por Venta: " + gananciaMensual + " $");
+        preciosinIva = preciohorno - (preciohorno * descuento);
+
+        System.out.println("precio sin Iva: " + preciosinIva);
+        System.out.println("Iva: 13%");
+        System.out.println("Precio con Iva: " + preciohorno);
     }
 }
