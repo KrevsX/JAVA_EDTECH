@@ -25,9 +25,10 @@ public class Ejercicio2 {
     */
     public static void main(String[] args) {
 
-        for (int i = 1; i <= 10; i++) {
+        for (int i = 1; i <= 1; i++) {
             int hrsTrabajadas = Integer.parseInt(JOptionPane.showInputDialog("Ingrese las Horas Trabajadas del Empleado: " + i + "#"));
             double salario;
+
             if (hrsTrabajadas <= 40) {
                 salario = hrsTrabajadas * 10;
 
@@ -35,8 +36,10 @@ public class Ejercicio2 {
                 salario = hrsTrabajadas * 15;
 
             }
+
             JOptionPane.showMessageDialog(null, "El Empleado " + i + "# " + "Genero: " + salario + " $\n"
-                    + "En base a " + hrsTrabajadas + " Horas Extras Realizadas");
+                    + "En base a " + hrsTrabajadas + " Horas Extras Realizadas \n"
+                    + "Ganancia Semanal: " + salario / 4);
         }
     }
 }
