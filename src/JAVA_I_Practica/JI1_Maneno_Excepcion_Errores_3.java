@@ -24,8 +24,8 @@ public class JI1_Maneno_Excepcion_Errores_3 {
         int numero2 = sc.nextInt();
 
         try{
-            int resutlado = metodo1(numero1, numero2);
-            System.out.println("Resultado...." + resutlado);
+            int resultado = metodo1(numero1, numero2);
+            System.out.println("Resultado...." + resultado);
         } catch (Exception e) {
             System.out.println("Error al Dividir..........");
         }
