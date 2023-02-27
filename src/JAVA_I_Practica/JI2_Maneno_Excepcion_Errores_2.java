@@ -12,11 +12,9 @@
 
 package JAVA_I_Practica;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.util.Scanner;
 
-public class JI1_Maneno_Excepcion_Errores_2 {
+public class JI2_Maneno_Excepcion_Errores_2 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);

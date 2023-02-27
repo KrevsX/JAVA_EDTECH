@@ -14,7 +14,7 @@ package JAVA_I_Practica;
 
 import java.util.Scanner;
 
-public class JI1_Maneno_Excepcion_Errores_3 {
+public class JI3_Maneno_Excepcion_Errores_3 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
