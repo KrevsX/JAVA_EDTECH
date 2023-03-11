@@ -22,10 +22,10 @@ public class Ejercicio_1 {
     public static void main(String[] args) {
         int opcion;
 
-        String nombre = "";
-        int no_nit = 0;
-        String direccion = "";
-        double ingMens = 0.00;
+        String nombre;
+        int no_nit;
+        String direccion;
+        double ingMens;
 
         do {
             opcion = Integer.parseInt(JOptionPane.showInputDialog("INGRESE UNA OPCION: \n"
@@ -53,13 +53,13 @@ public class Ejercicio_1 {
 
     public static void Read_() {
         boolean endOfFile = false;
-        String nombre = "";
-        int no_nit = 0;
-        String direccion = "";
-        double ingMens = 0.00;
+        String nombre;
+        int no_nit;
+        String direccion;
+        double ingMens;
 
         try {
-            FileInputStream archR = new FileInputStream("C:\\Users\\RAVENX\\Desktop\\Practice-OUT\\Practice-Java\\PrurebaBin2.dat");
+            FileInputStream archR = new FileInputStream("\\edutech\\S4_KevinArmandoLemusAlas\\Datos.dat");
             DataInputStream arcEntrada = new DataInputStream(archR);
 
             StringBuilder datosClientes = new StringBuilder();
@@ -75,12 +75,9 @@ public class Ejercicio_1 {
 
                     datosClientes.append("NOMBRE: => ")
                             .append(nombre)
-                            .append("   -   ")
-                            .append("NUMERO DE NIT: => " + no_nit)
-                            .append("   -   ")
-                            .append("DIRECCION: => " + direccion)
-                            .append("   -   ")
-                            .append("INGRESOS MENSUALES: => " + ingMens + "\n");
+                            .append("   -   ").append("NUMERO DE NIT: => ").append(no_nit)
+                            .append("   -   ").append("DIRECCION: => ").append(direccion)
+                            .append("   -   ").append("INGRESOS MENSUALES: => ").append(ingMens).append("\n");
 
 
                 } catch (IOException e) {
@@ -98,7 +95,7 @@ public class Ejercicio_1 {
 
     public static void CreateWrite_(String nombre, int no_nit, String direccion, double ingMensual) {
         try {
-            FileOutputStream cArch = new FileOutputStream("C:\\Users\\RAVENX\\Desktop\\Practice-OUT\\Practice-Java\\PrurebaBin2.dat", true);
+            FileOutputStream cArch = new FileOutputStream("\\edutech\\S4_KevinArmandoLemusAlas\\Datos.dat", true);
             DataOutputStream arcSalida = new DataOutputStream(cArch);
 
             arcSalida.writeUTF(nombre);
@@ -111,7 +108,7 @@ public class Ejercicio_1 {
 
         } catch (IOException e) {
             JOptionPane.showMessageDialog(null, "ERROR AL GUARDAR LOS DATOS");
-            e.getMessage();
+
         }
     }
 }

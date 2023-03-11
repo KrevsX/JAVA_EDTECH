@@ -82,10 +82,4 @@ public class Ejercicio_1 {
         }
 
     }
-
-    public static void MostrarPersonas(HashMap<String, InfoPersonal> infoAgenda) {
-
-    }
-
-
 }
